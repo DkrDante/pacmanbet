@@ -29,7 +29,7 @@ let score = 0;
 let ghosts = [];
 let wallSpaceWidth = oneBlockSize / 1.6;
 let wallOffset = (oneBlockSize - wallSpaceWidth) / 2;
-let wallInnerColor = "black";
+let wallInnerColor = "#ED0A04";
 
 
 let map = [
@@ -174,7 +174,7 @@ let drawWalls = () => {
                          i * oneBlockSize,
                          oneBlockSize,
                          oneBlockSize,
-                         "#342DCA"
+                         "black"
                     );
                     if (j > 0 && map[i][j - 1] == 1) {
                          createRect(
